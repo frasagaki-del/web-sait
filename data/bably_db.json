@@ -1,0 +1,1029 @@
+{
+  "users": [
+    {
+      "id": "usr_owner_frasagaki",
+      "username": "frasagaki",
+      "email": "frasagaki@gmail.com",
+      "password_hash": "c12222be8ec9cc60eb113ede8caf1a0c1348e9212d4ade39d1f019c1d85e0c9de0a55d025d4c099a8d1e2a3cd9145a8de6d240ceb9575a70cb2607f3f1f8ad02",
+      "salt": "e5c66b22cfead66a5e3b44de8a05bf6a",
+      "role": "admin",
+      "requires_password_change": false,
+      "created_at": "2026-09-22T22:00:17.616Z",
+      "last_login": "2026-09-22T22:09:00.975Z"
+    },
+    {
+      "id": "usr_admin_1",
+      "username": "admin",
+      "email": "admin@bably.store",
+      "password_hash": "c12222be8ec9cc60eb113ede8caf1a0c1348e9212d4ade39d1f019c1d85e0c9de0a55d025d4c099a8d1e2a3cd9145a8de6d240ceb9575a70cb2607f3f1f8ad02",
+      "salt": "e5c66b22cfead66a5e3b44de8a05bf6a",
+      "role": "admin",
+      "requires_password_change": true,
+      "created_at": "2026-09-22T22:00:17.616Z",
+      "last_login": "2026-09-22T22:00:36.577Z"
+    },
+    {
+      "id": "usr_editor_1",
+      "username": "editor",
+      "email": "editor@bably.store",
+      "password_hash": "a14c8832ea58c273b188f16f19d5ee2e0cba5eee398a194e1a059c7d7798ae7fac0421d595d8f77c862a7c203c093064e706cde8e84da24eb65591034eb49aa9",
+      "salt": "f91c673c7fc93512cb3ef3e3feb0eac2",
+      "role": "editor",
+      "requires_password_change": false,
+      "created_at": "2026-09-22T22:00:17.617Z",
+      "last_login": "2026-09-22T22:00:38.672Z"
+    }
+  ],
+  "stores": [
+    {
+      "id": "store_amazon",
+      "name": "Amazon",
+      "slug": "amazon",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
+      "affiliate_id": "bably0a-20",
+      "api_key_encrypted": "4f161647e7a4edb404fff567668a9f92:4e54cc9698c577b126feaabf1247063fdd8fb29aac2aca3e9791bd3a18a8a699",
+      "api_secret_encrypted": "243008ffd01f179ba74e14d5b408e5fe:edb35abf8dc741981a84752c84fc248384eddfac70f04ad3e9a6706ee6c73fb2d1387231fec2cbfce9989618da25e500",
+      "base_url": "https://www.amazon.com",
+      "connection_status": "connected",
+      "sync_frequency_hours": 6,
+      "last_synced_at": "2026-09-22T22:00:17.618Z",
+      "last_sync_message": "مزامنة ناجحة لجميع المنتجات والعروض",
+      "is_active": true
+    },
+    {
+      "id": "store_aliexpress",
+      "name": "AliExpress",
+      "slug": "aliexpress",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Aliexpress_logo.svg",
+      "affiliate_id": "bably_ali_aff_99",
+      "api_key_encrypted": "19f17096e8badda34cb4848587592083:4b2109418dcf2a9d42d04763d4c9980bb2f16ab98653c7cb38479f2d0a25aa8c",
+      "api_secret_encrypted": "d8f508b86af9b80aca949b01d880e139:2a543309a55fdaf3d4b919307064e483a6bb243af1507eace31d3ece0e154090",
+      "base_url": "https://www.aliexpress.com",
+      "connection_status": "connected",
+      "sync_frequency_hours": 12,
+      "last_synced_at": "2026-09-22T22:00:17.618Z",
+      "last_sync_message": "مزامنة المخزون وتحديث الأسعار التنافسية",
+      "is_active": true
+    },
+    {
+      "id": "store_ebay",
+      "name": "eBay",
+      "slug": "ebay",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/1/1b/EBay_logo.svg",
+      "affiliate_id": "epn_bably_store_53",
+      "api_key_encrypted": "149006c48f2a839526f9b85e088a1695:30720ed9770049ec2f5a6c99399ed69eb3d2d335b4d2fb8a2d92ddfb97f7143d",
+      "api_secret_encrypted": "078285644d36ede13ba31f0c80c49daf:85ebf603d8c1907abc73bca33af0bac3d3bb71c900961637c62cefdcbb0bfa6b",
+      "base_url": "https://www.ebay.com",
+      "connection_status": "connected",
+      "sync_frequency_hours": 24,
+      "last_synced_at": "2026-09-22T22:00:17.618Z",
+      "last_sync_message": "مزامنة المنتجات النشطة وعروض المزادات",
+      "is_active": true
+    },
+    {
+      "id": "store_cj",
+      "name": "CJ Affiliate",
+      "slug": "cj",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c5/CJ_Affiliate_Logo.png",
+      "affiliate_id": "cj_pub_bably_3184",
+      "api_key_encrypted": "cf7dae777736cc1b5c811d8cc4c88516:5b416bb92f8749111b5fe5048c0e1b4b1bbb4b7e689c434d36a0057031030796",
+      "api_secret_encrypted": "9c2e66aa6dc1a8756dda7fd04f5720b0:c8455ca3c79444a3f3f77be2447a600139a2e87bf1f870b228604f17db6206c3",
+      "base_url": "https://www.cj.com",
+      "connection_status": "connected",
+      "sync_frequency_hours": 24,
+      "last_synced_at": "2026-09-22T22:00:17.618Z",
+      "last_sync_message": "مزامنة شبكة البراندات المعتمدة",
+      "is_active": true
+    }
+  ],
+  "categories": [
+    {
+      "id": "cat_men",
+      "name": "ملابس رجالية",
+      "name_en": "Men's Clothing",
+      "slug": "men",
+      "description": "أحدث صيحات الموضة والأزياء الرجالية الكاجوال والرسمية",
+      "icon": "Shirt",
+      "is_fashion": true
+    },
+    {
+      "id": "cat_women",
+      "name": "ملابس نسائية",
+      "name_en": "Women's Clothing",
+      "slug": "women",
+      "description": "تشكيلة أنيقة من الفساتين، العبايات، والأزياء العصرية",
+      "icon": "Sparkles",
+      "is_fashion": true
+    },
+    {
+      "id": "cat_kids",
+      "name": "ملابس أطفال",
+      "name_en": "Kids' Clothing",
+      "slug": "kids",
+      "description": "ملابس مريحة وعملية للأولاد والبنات بجميع الأعمار",
+      "icon": "Baby",
+      "is_fashion": true
+    },
+    {
+      "id": "cat_shoes",
+      "name": "أحذية",
+      "name_en": "Shoes",
+      "slug": "shoes",
+      "description": "أحذية رياضية، رسمية، وصنادل بجودة عالية",
+      "icon": "Footprints",
+      "is_fashion": true
+    },
+    {
+      "id": "cat_sportswear",
+      "name": "ملابس رياضية",
+      "name_en": "Sportswear",
+      "slug": "sportswear",
+      "description": "ملابس وأطقم التدريب والأنشطة الرياضية المقاومة للتعرق",
+      "icon": "Trophy",
+      "is_fashion": true
+    },
+    {
+      "id": "cat_winter",
+      "name": "ملابس شتوية",
+      "name_en": "Winter Wear",
+      "slug": "winter",
+      "description": "معاطف، جواكيت صوفية، وسترات شتوية دافئة",
+      "icon": "CloudSnow",
+      "is_fashion": true
+    },
+    {
+      "id": "cat_summer",
+      "name": "ملابس صيفية",
+      "name_en": "Summer Wear",
+      "slug": "summer",
+      "description": "تيشيرتات خفيفة، شورتات، وملابس قطنية منعشة",
+      "icon": "Sun",
+      "is_fashion": true
+    },
+    {
+      "id": "cat_formal",
+      "name": "ملابس رسمية",
+      "name_en": "Formal Wear",
+      "slug": "formal",
+      "description": "بدل رجالية وفساتين سهرة راقية للمناسبات الخاصة",
+      "icon": "Briefcase",
+      "is_fashion": true
+    },
+    {
+      "id": "cat_casual",
+      "name": "ملابس كاجوال",
+      "name_en": "Casual Wear",
+      "slug": "casual",
+      "description": "إطلالات يومية عملية ومريحة للتنقل والعمل",
+      "icon": "Smile",
+      "is_fashion": true
+    },
+    {
+      "id": "cat_bags",
+      "name": "حقائب وإكسسوارات",
+      "name_en": "Bags & Accessories",
+      "slug": "bags",
+      "description": "حقائب يد، حقائب ظهر، ساعات ونظارات مميزة",
+      "icon": "ShoppingBag",
+      "is_fashion": true
+    },
+    {
+      "id": "cat_modest",
+      "name": "ملابس محجبات",
+      "name_en": "Modest Wear",
+      "slug": "modest",
+      "description": "أزياء محتشمة وعبايات عصرية بأرقى التصاميم",
+      "icon": "HeartHandshake",
+      "is_fashion": true
+    },
+    {
+      "id": "cat_electronics",
+      "name": "إلكترونيات وهواتف",
+      "name_en": "Electronics",
+      "slug": "electronics",
+      "description": "أجهزة ذكية وسماعات وملحقات تقنية أصلية",
+      "icon": "Laptop",
+      "is_fashion": false
+    }
+  ],
+  "brands": [
+    {
+      "id": "brand_nike",
+      "name": "Nike",
+      "name_en": "Nike",
+      "slug": "nike",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg",
+      "description": "العلامة الرائدة عالمياً في الأزياء والأحذية والمعدات الرياضية.",
+      "description_en": "World leading sports apparel and footwear company.",
+      "official_website": "https://www.nike.com",
+      "is_featured": true
+    },
+    {
+      "id": "brand_adidas",
+      "name": "Adidas",
+      "name_en": "Adidas",
+      "slug": "adidas",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/2/20/Adidas_Logo.svg",
+      "description": "تصاميم ألمانية مبتكرة للأحذية والملابس الرياضية والأزياء العصرية.",
+      "description_en": "Iconic German athletic footwear and apparel brand.",
+      "official_website": "https://www.adidas.com",
+      "is_featured": true
+    },
+    {
+      "id": "brand_zara",
+      "name": "Zara",
+      "name_en": "Zara",
+      "slug": "zara",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Zara_Logo.svg",
+      "description": "الموضة السريعة والأزياء الراقية الأسبوعية من إسبانيا.",
+      "description_en": "Spanish fast-fashion brand known for luxury trends.",
+      "official_website": "https://www.zara.com",
+      "is_featured": true
+    },
+    {
+      "id": "brand_hm",
+      "name": "H&M",
+      "name_en": "H&M",
+      "slug": "hm",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/5/53/H%26M-Logo.svg",
+      "description": "أزياء مستدامة ومريحة لجميع أفراد العائلة بأسعار مناسبة.",
+      "description_en": "Swedish multinational clothing retail company.",
+      "official_website": "https://www2.hm.com",
+      "is_featured": true
+    },
+    {
+      "id": "brand_levis",
+      "name": "Levi's",
+      "name_en": "Levi's",
+      "slug": "levis",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/7/75/Levi%27s_logo.svg",
+      "description": "أعرق ماركة دنيم وبنطلونات جينز أصلية متينة ومريحة.",
+      "description_en": "Classic American denim brand established in 1853.",
+      "official_website": "https://www.levi.com",
+      "is_featured": true
+    }
+  ],
+  "products": [
+    {
+      "id": "prod_1",
+      "title": "حذاء الجري Nike Air Zoom Runner بتصميم ديناميكي",
+      "title_en": "Nike Air Zoom Runner Aerodynamic Road Shoes",
+      "slug": "nike-air-zoom-runner-pro",
+      "category_id": "cat_shoes",
+      "brand_id": "brand_nike",
+      "current_price": 155000,
+      "previous_price": 195000,
+      "discount_percent": 21,
+      "currency": "IQD",
+      "rating": 4.8,
+      "reviews_count": 324,
+      "is_in_stock": true,
+      "store_id": "store_amazon",
+      "primary_image": "/src/assets/images/fashion_sneakers_runner_1790113977704.jpg",
+      "additional_images": [
+        "/src/assets/images/fashion_sneakers_runner_1790113977704.jpg",
+        "/src/assets/images/hero_fashion_bably_1790113945298.jpg"
+      ],
+      "video_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "features": [
+        "وسادة هوائية من تقنية Zoom Air لامتصاص الصدمات",
+        "نسيج شبكي علوي قابل للتهوية ومقاوم للرطوبة",
+        "نعل سفلي من المطاط عالي الثبات على كافة المسارات",
+        "تصميم خفيف الوزن يمنح راحة استثنائية طوال اليوم"
+      ],
+      "description": "حذاء ركض احترافي يجمع بين القوة والمرونة لتوفير أقصى درجات الثبات والسرعة أثناء التدريبات الرياضية المكثفة والارتداء اليومي.",
+      "description_en": "High-performance road running shoes engineered with responsive Zoom Air cushioning and breathable engineered mesh.",
+      "is_fashion": true,
+      "gender": "men",
+      "clothing_type": "حذاء رياضي",
+      "season": "all-season",
+      "material": "Synthetic Mesh & Rubber",
+      "care_instructions": "تنظيف يدوي بقطعة قماش مبللة، لا يوضع في الغسالة",
+      "country_of_origin": "Vietnam",
+      "variants": [
+        {
+          "id": "var_1_1",
+          "product_id": "prod_1",
+          "sku": "NK-RUN-BLK-42",
+          "color_name": "أسود فحمي",
+          "color_hex": "#111827",
+          "size": "42",
+          "size_system": "EU",
+          "material": "Mesh",
+          "price": 155000,
+          "previous_price": 195000,
+          "is_in_stock": true,
+          "affiliate_link_slug": "nike-air-zoom-runner-pro"
+        },
+        {
+          "id": "var_1_2",
+          "product_id": "prod_1",
+          "sku": "NK-RUN-BLK-43",
+          "color_name": "أسود فحمي",
+          "color_hex": "#111827",
+          "size": "43",
+          "size_system": "EU",
+          "material": "Mesh",
+          "price": 155000,
+          "previous_price": 195000,
+          "is_in_stock": true,
+          "affiliate_link_slug": "nike-air-zoom-runner-pro"
+        },
+        {
+          "id": "var_1_3",
+          "product_id": "prod_1",
+          "sku": "NK-RUN-BLK-44",
+          "color_name": "أسود فحمي",
+          "color_hex": "#111827",
+          "size": "44",
+          "size_system": "EU",
+          "material": "Mesh",
+          "price": 155000,
+          "previous_price": 195000,
+          "is_in_stock": true,
+          "affiliate_link_slug": "nike-air-zoom-runner-pro"
+        },
+        {
+          "id": "var_1_4",
+          "product_id": "prod_1",
+          "sku": "NK-RUN-AMB-43",
+          "color_name": "عنبري ملكي",
+          "color_hex": "#F59E0B",
+          "size": "43",
+          "size_system": "EU",
+          "material": "Mesh",
+          "price": 165000,
+          "previous_price": 195000,
+          "is_in_stock": true,
+          "affiliate_link_slug": "nike-air-zoom-runner-pro"
+        }
+      ],
+      "last_synced_at": "2026-09-22T22:00:17.618Z",
+      "views_count": 1420,
+      "affiliate_link_id": "aff_1",
+      "created_at": "2026-09-22T22:00:17.618Z"
+    },
+    {
+      "id": "prod_2",
+      "title": "بليزر رجالي فخم من الصوف الإيطالي بقصة عصرية",
+      "title_en": "Men Italian Tailored Wool Minimalist Blazer",
+      "slug": "mens-tailored-wool-blazer",
+      "category_id": "cat_formal",
+      "brand_id": "brand_zara",
+      "current_price": 125000,
+      "previous_price": 170000,
+      "discount_percent": 26,
+      "currency": "IQD",
+      "rating": 4.7,
+      "reviews_count": 189,
+      "is_in_stock": true,
+      "store_id": "store_aliexpress",
+      "primary_image": "/src/assets/images/fashion_mens_jacket_1790113956536.jpg",
+      "additional_images": [
+        "/src/assets/images/fashion_mens_jacket_1790113956536.jpg",
+        "/src/assets/images/hero_fashion_bably_1790113945298.jpg"
+      ],
+      "features": [
+        "مزيج من الصوف الإيطالي الفاخر بنسبة 80% مع ألياف الحرير",
+        "بطانة داخلية ساتان ناعمة مريحة للحركة",
+        "ياقة بيك كلاسيكية وزرّان للإغلاق الأمامي",
+        "جيوب داخلية مخصصة للمحفظة والهاتف"
+      ],
+      "description": "بليزر مصمم بعناية ليمنحك إطلالة رسمية راقية في لقاءات العمل والمناسبات الرسمية والأمسيات الفاخرة.",
+      "description_en": "Italian blend wool tailored blazer crafted with refined lapels and structured modern silhouette.",
+      "is_fashion": true,
+      "gender": "men",
+      "clothing_type": "بليزر رسمي",
+      "season": "winter",
+      "material": "Wool Blend",
+      "care_instructions": "تنظيف جاف فقط (Dry Clean Only)",
+      "country_of_origin": "Italy",
+      "variants": [
+        {
+          "id": "var_2_1",
+          "product_id": "prod_2",
+          "sku": "ZR-BLZ-CHR-M",
+          "color_name": "رمادي فحمي",
+          "color_hex": "#334155",
+          "size": "M",
+          "size_system": "EU",
+          "material": "Wool",
+          "price": 125000,
+          "previous_price": 170000,
+          "is_in_stock": true,
+          "affiliate_link_slug": "mens-tailored-wool-blazer"
+        },
+        {
+          "id": "var_2_2",
+          "product_id": "prod_2",
+          "sku": "ZR-BLZ-CHR-L",
+          "color_name": "رمادي فحمي",
+          "color_hex": "#334155",
+          "size": "L",
+          "size_system": "EU",
+          "material": "Wool",
+          "price": 125000,
+          "previous_price": 170000,
+          "is_in_stock": true,
+          "affiliate_link_slug": "mens-tailored-wool-blazer"
+        },
+        {
+          "id": "var_2_3",
+          "product_id": "prod_2",
+          "sku": "ZR-BLZ-CHR-XL",
+          "color_name": "رمادي فحمي",
+          "color_hex": "#334155",
+          "size": "XL",
+          "size_system": "EU",
+          "material": "Wool",
+          "price": 125000,
+          "previous_price": 170000,
+          "is_in_stock": true,
+          "affiliate_link_slug": "mens-tailored-wool-blazer"
+        },
+        {
+          "id": "var_2_4",
+          "product_id": "prod_2",
+          "sku": "ZR-BLZ-NVY-L",
+          "color_name": "أزرق كحلي",
+          "color_hex": "#0F172A",
+          "size": "L",
+          "size_system": "EU",
+          "material": "Wool",
+          "price": 125000,
+          "previous_price": 170000,
+          "is_in_stock": true,
+          "affiliate_link_slug": "mens-tailored-wool-blazer"
+        }
+      ],
+      "last_synced_at": "2026-09-22T22:00:17.618Z",
+      "views_count": 980,
+      "affiliate_link_id": "aff_2",
+      "created_at": "2026-09-22T22:00:17.618Z"
+    },
+    {
+      "id": "prod_3",
+      "title": "فستان ميدي فاخر من الحرير الطبيعي بلون زمردي أخاذ",
+      "title_en": "Emerald Green Silk Midi Cocktail Dress",
+      "slug": "emerald-silk-evening-dress",
+      "category_id": "cat_women",
+      "brand_id": "brand_zara",
+      "current_price": 142000,
+      "previous_price": 210000,
+      "discount_percent": 32,
+      "currency": "IQD",
+      "rating": 4.9,
+      "reviews_count": 412,
+      "is_in_stock": true,
+      "store_id": "store_ebay",
+      "primary_image": "/src/assets/images/fashion_womens_dress_1790113967309.jpg",
+      "additional_images": [
+        "/src/assets/images/fashion_womens_dress_1790113967309.jpg"
+      ],
+      "features": [
+        "حرير طبيعي 100% بانسيابية استثنائية ولمعان جذاب",
+        "قصة خصر محددة مع تنورة منسدلة بأناقة",
+        "طول ميدي محتشم ومثالي لجميع الحفلات والمناسبات",
+        "حزام خصر قماشي أنيق قابل للتعديل"
+      ],
+      "description": "فستان ساحر يجمع بين الحشمة والأنوثة الطاغية بخامة حريرية لا تبهت وسهلة التنسيق مع المجوهرات الذهبية.",
+      "description_en": "Graceful emerald silk midi dress tailored to perfection with fluid movement and opulent natural luster.",
+      "is_fashion": true,
+      "gender": "women",
+      "clothing_type": "فستان سهرة",
+      "season": "all-season",
+      "material": "100% Pure Silk",
+      "care_instructions": "غسيل يدوي بماء بارد ومسحوق حرير خاص",
+      "country_of_origin": "France",
+      "variants": [
+        {
+          "id": "var_3_1",
+          "product_id": "prod_3",
+          "sku": "EM-DRS-GRN-S",
+          "color_name": "أخضر زمردي",
+          "color_hex": "#059669",
+          "size": "S",
+          "size_system": "EU",
+          "material": "Silk",
+          "price": 142000,
+          "previous_price": 210000,
+          "is_in_stock": true,
+          "affiliate_link_slug": "emerald-silk-evening-dress"
+        },
+        {
+          "id": "var_3_2",
+          "product_id": "prod_3",
+          "sku": "EM-DRS-GRN-M",
+          "color_name": "أخضر زمردي",
+          "color_hex": "#059669",
+          "size": "M",
+          "size_system": "EU",
+          "material": "Silk",
+          "price": 142000,
+          "previous_price": 210000,
+          "is_in_stock": true,
+          "affiliate_link_slug": "emerald-silk-evening-dress"
+        },
+        {
+          "id": "var_3_3",
+          "product_id": "prod_3",
+          "sku": "EM-DRS-GRN-L",
+          "color_name": "أخضر زمردي",
+          "color_hex": "#059669",
+          "size": "L",
+          "size_system": "EU",
+          "material": "Silk",
+          "price": 142000,
+          "previous_price": 210000,
+          "is_in_stock": true,
+          "affiliate_link_slug": "emerald-silk-evening-dress"
+        }
+      ],
+      "last_synced_at": "2026-09-22T22:00:17.618Z",
+      "views_count": 2310,
+      "affiliate_link_id": "aff_3",
+      "created_at": "2026-09-22T22:00:17.618Z"
+    },
+    {
+      "id": "prod_4",
+      "title": "بنطلون جينز كلاسيكي Levi's 501 Original Fit أصلي",
+      "title_en": "Levi's 501 Original Fit Classic Denim Jeans",
+      "slug": "levis-501-original-fit-jeans",
+      "category_id": "cat_casual",
+      "brand_id": "brand_levis",
+      "current_price": 88000,
+      "previous_price": 115000,
+      "discount_percent": 23,
+      "currency": "IQD",
+      "rating": 4.8,
+      "reviews_count": 670,
+      "is_in_stock": true,
+      "store_id": "store_amazon",
+      "primary_image": "/src/assets/images/hero_fashion_bably_1790113945298.jpg",
+      "additional_images": [
+        "/src/assets/images/hero_fashion_bably_1790113945298.jpg"
+      ],
+      "features": [
+        "دنيم قطني نقي 100% مع أزرار الإغلاق التاريخية الأصلية",
+        "قصة مستقيمة مريحة من الحوض إلى الكاحل",
+        "خياطة متينة ومقاومة للتآكل بعد مئات الغسلات",
+        "شعار ليفايز الجلدي الشهير على الجيب الخلفي"
+      ],
+      "description": "الجينز الأكثر شهرة عالمياً منذ عام 1873، خيار يومي دائم للأناقة والعملية.",
+      "description_en": "The authentic original straight-fit button-fly denim jeans that defined casual style.",
+      "is_fashion": true,
+      "gender": "men",
+      "clothing_type": "جينز",
+      "season": "all-season",
+      "material": "100% Heavy Cotton Denim",
+      "care_instructions": "غسيل بالغسالة مقلوباً مع ألوان مشابهة",
+      "country_of_origin": "USA",
+      "variants": [
+        {
+          "id": "var_4_1",
+          "product_id": "prod_4",
+          "sku": "LV-501-BLU-32",
+          "color_name": "أزرق كلاسيكي",
+          "color_hex": "#1D4ED8",
+          "size": "32",
+          "size_system": "US",
+          "material": "Denim",
+          "price": 88000,
+          "previous_price": 115000,
+          "is_in_stock": true,
+          "affiliate_link_slug": "levis-501-original-fit-jeans"
+        },
+        {
+          "id": "var_4_2",
+          "product_id": "prod_4",
+          "sku": "LV-501-BLU-34",
+          "color_name": "أزرق كلاسيكي",
+          "color_hex": "#1D4ED8",
+          "size": "34",
+          "size_system": "US",
+          "material": "Denim",
+          "price": 88000,
+          "previous_price": 115000,
+          "is_in_stock": true,
+          "affiliate_link_slug": "levis-501-original-fit-jeans"
+        },
+        {
+          "id": "var_4_3",
+          "product_id": "prod_4",
+          "sku": "LV-501-BLK-32",
+          "color_name": "أسود خام",
+          "color_hex": "#000000",
+          "size": "32",
+          "size_system": "US",
+          "material": "Denim",
+          "price": 88000,
+          "previous_price": 115000,
+          "is_in_stock": true,
+          "affiliate_link_slug": "levis-501-original-fit-jeans"
+        }
+      ],
+      "last_synced_at": "2026-09-22T22:00:17.618Z",
+      "views_count": 1750,
+      "affiliate_link_id": "aff_4",
+      "created_at": "2026-09-22T22:00:17.618Z"
+    },
+    {
+      "id": "prod_5",
+      "title": "هودي قطني ثقيل بقصة Oversized كاجوال مريحة",
+      "title_en": "Heavyweight French Terry Oversized Hoodie",
+      "slug": "zara-oversized-cotton-hoodie",
+      "category_id": "cat_casual",
+      "brand_id": "brand_hm",
+      "current_price": 52000,
+      "previous_price": 75000,
+      "discount_percent": 30,
+      "currency": "IQD",
+      "rating": 4.6,
+      "reviews_count": 145,
+      "is_in_stock": true,
+      "store_id": "store_cj",
+      "primary_image": "/src/assets/images/hero_fashion_bably_1790113945298.jpg",
+      "additional_images": [
+        "/src/assets/images/hero_fashion_bably_1790113945298.jpg"
+      ],
+      "features": [
+        "قطن فرنسي تيري ثقيل بوزن 450 جرام/م²",
+        "بطانة داخلية مريحة ودافئة بدون وبر زائد",
+        "قبعة مزدوجة الطبقات مع رباط متين مخفي",
+        "جيب كنغر أمامي واسع لتدفئة اليدين"
+      ],
+      "description": "هودي كاجوال مميز مناسب للأيام الباردة والأنشطة الجامعية والخروجات السريعة بألوان ترابية جذابة.",
+      "description_en": "Premium heavyweight French terry cotton hoodie featuring dropped shoulders and relaxed boxy cut.",
+      "is_fashion": true,
+      "gender": "unisex",
+      "clothing_type": "هودي وسويت شيرت",
+      "season": "winter",
+      "material": "100% French Terry Cotton",
+      "care_instructions": "غسيل بماء معتدل وتجفيف بالهواء",
+      "country_of_origin": "Portugal",
+      "variants": [
+        {
+          "id": "var_5_1",
+          "product_id": "prod_5",
+          "sku": "HM-HD-BEG-M",
+          "color_name": "بيج رملي",
+          "color_hex": "#D7C4A5",
+          "size": "M",
+          "size_system": "EU",
+          "material": "Cotton",
+          "price": 52000,
+          "previous_price": 75000,
+          "is_in_stock": true,
+          "affiliate_link_slug": "zara-oversized-cotton-hoodie"
+        },
+        {
+          "id": "var_5_2",
+          "product_id": "prod_5",
+          "sku": "HM-HD-BEG-L",
+          "color_name": "بيج رملي",
+          "color_hex": "#D7C4A5",
+          "size": "L",
+          "size_system": "EU",
+          "material": "Cotton",
+          "price": 52000,
+          "previous_price": 75000,
+          "is_in_stock": true,
+          "affiliate_link_slug": "zara-oversized-cotton-hoodie"
+        },
+        {
+          "id": "var_5_3",
+          "product_id": "prod_5",
+          "sku": "HM-HD-BLK-L",
+          "color_name": "أسود ليلي",
+          "color_hex": "#18181B",
+          "size": "L",
+          "size_system": "EU",
+          "material": "Cotton",
+          "price": 52000,
+          "previous_price": 75000,
+          "is_in_stock": true,
+          "affiliate_link_slug": "zara-oversized-cotton-hoodie"
+        }
+      ],
+      "last_synced_at": "2026-09-22T22:00:17.618Z",
+      "views_count": 890,
+      "affiliate_link_id": "aff_5",
+      "created_at": "2026-09-22T22:00:17.618Z"
+    }
+  ],
+  "affiliate_links": [
+    {
+      "id": "aff_1",
+      "slug": "nike-air-zoom-runner-pro",
+      "product_id": "prod_1",
+      "store_id": "store_amazon",
+      "target_url": "https://www.amazon.com/dp/B09XYZ1234?tag=bably0a-20",
+      "custom_params": "subid=bably_iq_campaign",
+      "is_active": true,
+      "total_clicks": 143,
+      "created_at": "2026-09-22T22:00:17.618Z"
+    },
+    {
+      "id": "aff_2",
+      "slug": "mens-tailored-wool-blazer",
+      "product_id": "prod_2",
+      "store_id": "store_aliexpress",
+      "target_url": "https://www.aliexpress.com/item/10050064210.html?aff_fcid=bably_ali_aff_99",
+      "is_active": true,
+      "total_clicks": 89,
+      "created_at": "2026-09-22T22:00:17.618Z"
+    },
+    {
+      "id": "aff_3",
+      "slug": "emerald-silk-evening-dress",
+      "product_id": "prod_3",
+      "store_id": "store_ebay",
+      "target_url": "https://www.ebay.com/itm/385912401824?campid=533812001",
+      "is_active": true,
+      "total_clicks": 210,
+      "created_at": "2026-09-22T22:00:17.618Z"
+    },
+    {
+      "id": "aff_4",
+      "slug": "levis-501-original-fit-jeans",
+      "product_id": "prod_4",
+      "store_id": "store_amazon",
+      "target_url": "https://www.amazon.com/dp/B07TEST881?tag=bably0a-20",
+      "is_active": true,
+      "total_clicks": 76,
+      "created_at": "2026-09-22T22:00:17.618Z"
+    },
+    {
+      "id": "aff_5",
+      "slug": "zara-oversized-cotton-hoodie",
+      "product_id": "prod_5",
+      "store_id": "store_cj",
+      "target_url": "https://www.anrdoezrs.net/click-3184-zara-hoodie-cotton",
+      "is_active": true,
+      "total_clicks": 115,
+      "created_at": "2026-09-22T22:00:17.618Z"
+    }
+  ],
+  "clicks": [
+    {
+      "id": "clk_1",
+      "affiliate_link_id": "aff_1",
+      "product_id": "prod_1",
+      "store_id": "store_amazon",
+      "referrer": "https://bably.store/fashion",
+      "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X)",
+      "device_type": "mobile",
+      "country": "Iraq",
+      "ip_hash": "a1b2c3d4",
+      "clicked_at": "2026-09-22T20:00:17.618Z"
+    },
+    {
+      "id": "clk_2",
+      "affiliate_link_id": "aff_3",
+      "product_id": "prod_3",
+      "store_id": "store_ebay",
+      "referrer": "https://bably.store/products",
+      "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)",
+      "device_type": "desktop",
+      "country": "Iraq",
+      "ip_hash": "e5f6g7h8",
+      "clicked_at": "2026-09-22T17:00:17.619Z"
+    },
+    {
+      "id": "clk_3",
+      "affiliate_link_id": "aff_2",
+      "product_id": "prod_2",
+      "store_id": "store_aliexpress",
+      "referrer": "https://bably.store/deals",
+      "user_agent": "Mozilla/5.0 (Linux; Android 14; SM-S918B)",
+      "device_type": "mobile",
+      "country": "United Arab Emirates",
+      "ip_hash": "i9j0k1l2",
+      "clicked_at": "2026-09-22T14:00:17.619Z"
+    },
+    {
+      "id": "clk_1790114426796_8jw8",
+      "affiliate_link_id": "aff_1",
+      "product_id": "prod_1",
+      "store_id": "store_amazon",
+      "referrer": "Direct",
+      "user_agent": "curl/7.88.1",
+      "device_type": "desktop",
+      "country": "Iraq",
+      "ip_hash": "MTI3LjAuMC",
+      "clicked_at": "2026-09-22T22:00:26.796Z"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "rev_1",
+      "product_id": "prod_1",
+      "author_name": "عمر القيسي - بغداد",
+      "rating": 5,
+      "comment": "الحذاء أصلي 100% ووصلني من أمازون بحالة ممتازة، مريح جداً في الجري وامتصاص الصدمات ممتاز على الطرقات.",
+      "is_verified_purchase": true,
+      "status": "approved",
+      "created_at": "2026-09-20T22:00:17.618Z"
+    },
+    {
+      "id": "rev_2",
+      "product_id": "prod_2",
+      "author_name": "أحمد البصري",
+      "rating": 5,
+      "comment": "خامة الصوف فاخرة جداً والتفصيل متقن، المقاس الأوروبي L ناسبني تماماً كأنها مفصلة خصوصاً لي.",
+      "is_verified_purchase": true,
+      "status": "approved",
+      "created_at": "2026-09-17T22:00:17.618Z"
+    },
+    {
+      "id": "rev_3",
+      "product_id": "prod_3",
+      "author_name": "سارة العبيدي - أربيل",
+      "rating": 5,
+      "comment": "لون الفستان الزمردي على الطبيعة أجمل بكثير من الصور، الحرير انسيابي وخفيف على الجسم وراقي جداً.",
+      "is_verified_purchase": true,
+      "status": "approved",
+      "created_at": "2026-09-15T22:00:17.618Z"
+    }
+  ],
+  "blog_posts": [
+    {
+      "id": "post_1",
+      "title": "دليل مقاسات الملابس العالمية: كيف تختار مقاسك بين EU و US و UK بدقة وبدون أخطاء؟",
+      "title_en": "International Size Guide: How to convert EU, US and UK sizes accurately",
+      "slug": "international-clothing-size-guide-2026",
+      "excerpt": "تعرف على الفروقات الدقيقة بين المقاسات الأوروبية والأمريكية والآسيوية وتجنب إرجاع الشحنات عند التسوق عبر الإنترنت.",
+      "cover_image": "/src/assets/images/hero_fashion_bably_1790113945298.jpg",
+      "category": "نصائح التسوق والأزياء",
+      "tags": [
+        "دليل المقاسات",
+        "أزياء",
+        "تسوق إلكتروني",
+        "أحذية",
+        "نصائح"
+      ],
+      "content": "## مشكلة اختلاف المقاسات عند الشراء من المتاجر العالمية\n\nعند التسوق عبر المتاجر العالمية مثل Amazon أو AliExpress أو eBay، فإن أكثر ما يربك المتسوق العربي هو اختلاف أنظمة القياس. فالمقاس M في المتاجر الآسيوية يعادل عادةً XS أو S في النظام الأوروبي أو الأمريكي.\n\n### 1. المقاسات الأوروبية (EU) مقابل الأمريكية (US)\nتعتمد المقاسات الأوروبية في الملابس العلوية على قياس نصف محيط الصدر بالسنتيمتر، بينما يعتمد النظام الأمريكي على البوصة (Inches). \n\n### 2. جدول مقارنة المقاسات العلوية للرجال والنساء:\nنوصي دائماً بأخذ شريط القياس وقياس محيط الصدر والخصر، ومقارنته بالجدول قبل إتمام الطلب من المتجر الأصلي.",
+      "comparison_table": [
+        {
+          "product_name": "بليزر صوف إيطالي",
+          "brand": "Zara",
+          "price": "125,000 د.ع",
+          "material": "صوف",
+          "sizes": "M, L, XL (EU)",
+          "rating": "4.7 / 5",
+          "store": "AliExpress",
+          "affiliate_slug": "mens-tailored-wool-blazer"
+        },
+        {
+          "product_name": "هودي تيري قطني",
+          "brand": "H&M",
+          "price": "52,000 د.ع",
+          "material": "قطن 100%",
+          "sizes": "S, M, L, XL",
+          "rating": "4.6 / 5",
+          "store": "CJ",
+          "affiliate_slug": "zara-oversized-cotton-hoodie"
+        },
+        {
+          "product_name": "جينز 501 كلاسيك",
+          "brand": "Levi's",
+          "price": "88,000 د.ع",
+          "material": "دنيم ثقيل",
+          "sizes": "30, 32, 34, 36 (US)",
+          "rating": "4.8 / 5",
+          "store": "Amazon",
+          "affiliate_slug": "levis-501-original-fit-jeans"
+        }
+      ],
+      "seo_title": "دليل مقاسات الملابس العالمية وكيفية التحويل بدقة | مدونة بابلي",
+      "meta_description": "شرح مفصل لطريقة قياس واختيار المقاسات الأوروبية والأمريكية والآسيوية في المتاجر العالمية مع جدول مقارنة عملي.",
+      "status": "published",
+      "published_at": "2026-09-19T22:00:17.619Z",
+      "created_at": "2026-09-18T22:00:17.619Z"
+    },
+    {
+      "id": "post_2",
+      "title": "مقارنة أفضل الأحذية الرياضية لعام 2026: Nike Air Zoom ضد أحذية Adidas الرائدة",
+      "title_en": "Best Running Shoes 2026: Nike Air Zoom vs Adidas Flagship Review",
+      "slug": "nike-vs-adidas-running-shoes-2026-comparison",
+      "excerpt": "مقارنة فنية عميقة للمتانة، وسائد امتصاص الصدمات، والأسعار الحقيقية بالدينار العراقي على المتاجر المعتمدة.",
+      "cover_image": "/src/assets/images/fashion_sneakers_runner_1790113977704.jpg",
+      "category": "مقارنات المنتجات",
+      "tags": [
+        "أحذية رياضية",
+        "Nike",
+        "Adidas",
+        "مقارنة",
+        "عروض"
+      ],
+      "content": "## المقارنة الشاملة بين عمالقة الأحذية الرياضية\n\nإذا كنت تبحث عن حذاء يومي للجري والتدريب اليومي، فإن الاختيار بين نايكي وأديداس يحتاج إلى النظر في الخامات وثبات النعل ومرونة وسادة الهواء.\n\n### حذاء Nike Air Zoom Runner\nيتميز بنظام وسائد هوائية مدمجة تعيد الطاقة بنسبة 15% أعلى عند كل خطوة، مما يقلل إجهاد المفاصل خصوصاً على الأسطح الخرسانية.",
+      "comparison_table": [
+        {
+          "product_name": "Nike Air Zoom Runner",
+          "brand": "Nike",
+          "price": "155,000 د.ع",
+          "material": "Engineered Mesh",
+          "sizes": "41, 42, 43, 44",
+          "rating": "4.8 / 5",
+          "store": "Amazon",
+          "affiliate_slug": "nike-air-zoom-runner-pro"
+        }
+      ],
+      "seo_title": "مقارنة أحذية نايكي وأديداس الرياضية 2026 وأفضل الصفقات | بابلي",
+      "meta_description": "استكشف الفروقات الفنية والأسعار الحقيقية لأفضل أحذية الركض والمشي لعام 2026 وكيفية شرائها بأفضل سعر.",
+      "status": "published",
+      "published_at": "2026-09-21T22:00:17.619Z",
+      "created_at": "2026-09-20T22:00:17.619Z"
+    }
+  ],
+  "exchange_rates": [
+    {
+      "id": "rate_iqd",
+      "code": "IQD",
+      "name": "دينار عراقي",
+      "name_ar": "دينار عراقي",
+      "symbol": "د.ع",
+      "rate_to_iqd": 1,
+      "is_base": true,
+      "last_updated": "2026-09-22T22:00:17.618Z"
+    },
+    {
+      "id": "rate_usd",
+      "code": "USD",
+      "name": "US Dollar",
+      "name_ar": "دولار أمريكي",
+      "symbol": "$",
+      "rate_to_iqd": 1310,
+      "is_base": false,
+      "last_updated": "2026-09-22T22:00:17.618Z"
+    },
+    {
+      "id": "rate_eur",
+      "code": "EUR",
+      "name": "Euro",
+      "name_ar": "يورو",
+      "symbol": "€",
+      "rate_to_iqd": 1410,
+      "is_base": false,
+      "last_updated": "2026-09-22T22:00:17.618Z"
+    },
+    {
+      "id": "rate_sar",
+      "code": "SAR",
+      "name": "Saudi Riyal",
+      "name_ar": "ريال سعودي",
+      "symbol": "ر.س",
+      "rate_to_iqd": 349,
+      "is_base": false,
+      "last_updated": "2026-09-22T22:00:17.618Z"
+    },
+    {
+      "id": "rate_aed",
+      "code": "AED",
+      "name": "UAE Dirham",
+      "name_ar": "درهم إماراتي",
+      "symbol": "د.إ",
+      "rate_to_iqd": 356,
+      "is_base": false,
+      "last_updated": "2026-09-22T22:00:17.618Z"
+    }
+  ],
+  "admin_logs": [
+    {
+      "id": "log_init_1",
+      "user_id": "usr_admin_1",
+      "username": "admin",
+      "action": "SYSTEM_BOOTSTRAP",
+      "entity_type": "SYSTEM",
+      "entity_id": "SYSTEM_INIT",
+      "details": "تهيئة قاعدة بيانات بابلي وربط المتاجر والعملة الأساسية (الدينار العراقي IQD)",
+      "ip_address": "127.0.0.1",
+      "created_at": "2026-09-22T22:00:17.619Z"
+    }
+  ],
+  "backups": [],
+  "settings": {
+    "site_name": "Bably | بابلي",
+    "site_name_en": "Bably Store",
+    "tagline": "منصتكم الأولى لمقارنة واقتناص أفضل العروض والأزياء من المتاجر العالمية بالدينار العراقي",
+    "logo_url": "/logo.svg",
+    "primary_color": "#0F172A",
+    "accent_color": "#F59E0B",
+    "base_currency": "IQD",
+    "default_language": "ar",
+    "affiliate_disclosure_ar": "إفصاح قانوني: قد يحصل متجر بابلي (Bably) على عمولة تسويقية عند إتمام عملية الشراء من خلال بعض الروابط الموجودة في الموقع، دون أي تكلفة إضافية على المشتري. جميع الأسعار والعروض يتم تحديثها تلقائياً من المتاجر الأصلية.",
+    "affiliate_disclosure_en": "Affiliate Disclosure: Bably may earn an affiliate commission when you make a purchase through links on our site, at no additional cost to you. All prices and offers are synced directly from official merchant stores.",
+    "contact_email": "support@bably.store",
+    "contact_phone": "+964 770 000 0000",
+    "facebook_url": "https://facebook.com/bablystore",
+    "instagram_url": "https://instagram.com/bablystore",
+    "twitter_url": "https://twitter.com/bablystore",
+    "telegram_url": "https://t.me/bablystore",
+    "seo_meta_title": "Bably | بابلي - متجر التسوق والأفلييت المتكامل",
+    "seo_meta_description": "تصفح وقارن آلاف المنتجات والأزياء العالمية من أمازون، علي إكسبرس، إيباي وسي جي بأفضل الأسعار بالدينار العراقي.",
+    "robots_content": "User-agent: *\nAllow: /\nDisallow: /admin\nDisallow: /api/\nSitemap: https://bably.store/sitemap.xml",
+    "auto_sync_enabled": true,
+    "sync_interval_hours": 6,
+    "allow_user_registration": true
+  }
+}

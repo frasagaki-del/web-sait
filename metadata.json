@@ -1,0 +1,7 @@
+{
+  "name": "Bably | بابلي - متجر التسوق والأفلييت المتكامل",
+  "description": "منصة Bably (بابلي) لتجميع ومقارنة العروض وتخفيضات الأزياء والمتاجر العالمية مع أسعار بالدينار العراقي وروابط موثوقة.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
